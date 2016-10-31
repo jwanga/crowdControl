@@ -3,13 +3,13 @@
  */
 class Circle {
 
-  constructor(radius , center, text, isValid) {
+  constructor(radius, center, text, isValid) {
     
     this.radius = radius;
     this.cx = center;
     this.cy = center;
     this.text = text;
-    this.isValid = isValid
+    this.isValid = isValid;
     this.containerSize = center * 2;
     this.textHeight = 20;
 
@@ -36,11 +36,13 @@ class Circle {
     text.setAttribute('y', this.containerSize + this.textHeight - (this.textHeight * .25));
     text.setAttribute('text-anchor', 'middle');
     text.setAttribute('class', this.isValid ? 'valid': 'invalid');
+    text.style.opacity = (this.radius / this.cx) + .4;
 
     //Set the circle attributes.
     circle.setAttribute('cx', this.cx);
     circle.setAttribute('cy', this.cy);
     circle.setAttribute('r', this.radius);
+    circle.style.opacity = (this.radius / this.cx);
 
     return this._svg;
   }

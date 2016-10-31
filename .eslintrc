@@ -24,7 +24,10 @@
         ]
     },
     "globals": {
-        "Transition": true
+        "Transition": true,
+        "Circle": true,
+        "crowdControlTestData": true,
+        "crowdControlCalc": true
     },
     "env": {
         "es6": true,

@@ -1,6 +1,8 @@
 html, body{
   height: 100%;
   font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -13,23 +15,72 @@ body {
 /* Define input styles */
 .input {
   justify-content: center;
+  background: darkturquoise;
+  box-shadow: 0 .25rem .25rem grey;
+  color: white;
+  opacity: .75;
+  padding: .5rem;
   display: flex;
   font-size: 2rem;
+  margin: 0;
   position: absolute;
   top: 0;
-  margin: 1rem;
   width: 100%;  
+}
+
+/* Define button Styles */
+.input button {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  font-family: Lucida Sans Unicode;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  left: 1.5rem;
+  outline: none;
+  height: 65%
+}
+
+.input button:hover {
+  color: lightgray;
+}
+
+.input button:active {
+  color: darkgray;
 }
 
 /* Define circle styles */
 .circle {
+  animation: scalein .5s ease-in-out;
   height: 20rem;
+  transition: all .5s;
+}
+
+.circle circle{
+  fill: #19DD89;
+}
+
+.circle:hover {
+  transform: scale(1.6);
 }
 
 .circle > text{
   font-size: 1rem;
 }
+.circle .valid {
+  fill: #19DD89;
+}
 
 .circle .invalid {
   fill: red;
+}
+
+@keyframes scalein {
+  0% {
+    transform: scale(0.0);
+  }
+  100% {
+    transform: scale(1.0);
+  }
 }
