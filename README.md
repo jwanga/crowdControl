@@ -1,4 +1,21 @@
 # Task Description
+
+## Development
+This solution can be run from any static HTML server though I've included a dev server for convinience.
+This solution also includes a .eslistrc config for linting javascript.
+
+To install these packages, run the following:
+```
+npm install
+```
+
+To start the dev server, run the following:
+```
+npm start
+```
+
+The application will be availible at http://localhost:3000/src/index.html
+
 ## Problem Statement
 In League of Legends, the game uses an algorithm to determine what dominant crowd control effect is applied to a champion at a particular point in time. This question asks you to write this algorithm. We want your algorithm to determine the moments in time when the severity of crowd control effects change.
 
