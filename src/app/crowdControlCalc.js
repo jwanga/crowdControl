@@ -160,11 +160,11 @@ const effects = [
   }
 ];
 
-effects.forEach((effect) => {
-  const result = crowdControlCalc.calculateCrowdControlChange(effect.effect);
+// effects.forEach((effect) => {
+//   const result = crowdControlCalc.calculateCrowdControlChange(effect.effect);
 
-  console.log(JSON.stringify(effect.effect));
-  console.log(JSON.stringify(result));
-  console.log(JSON.stringify(result) === JSON.stringify(effect.result));
-  console.log('-----------------------------------------------------------');
-});
+//   console.log(JSON.stringify(effect.effect));
+//   console.log(JSON.stringify(result));
+//   console.log(JSON.stringify(result) === JSON.stringify(effect.result));
+//   console.log('-----------------------------------------------------------');
+// });

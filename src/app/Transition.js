@@ -135,6 +135,7 @@ class Transition {
       if (!this.next) {
         this.next = transition;
       } else {
+        //Recursively append the transition if there are more elements in the linked list.
         this.next.append(transition);
       }
     }
